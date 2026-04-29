@@ -1,0 +1,147 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #111827;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: #38bdf8;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #cbd5e1;
+}
+
+/* Textareas */
+textarea {
+  width: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Given Text */
+#inputText {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+/* User Typing Area */
+#userInput {
+  background-color: #f8fafc;
+  color: #111827;
+}
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Start Button */
+button:first-child {
+  background-color: #22c55e;
+  color: white;
+}
+
+button:first-child:hover {
+  background-color: #16a34a;
+  transform: scale(1.05);
+}
+
+/* End Button */
+button:last-child {
+  background-color: #ef4444;
+  color: white;
+}
+
+button:last-child:hover {
+  background-color: #dc2626;
+  transform: scale(1.05);
+}
+
+/* Output Section */
+#output {
+  margin-top: 30px;
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  line-height: 2;
+  font-size: 18px;
+  color: #f8fafc;
+}
+
+/* Result Title */
+#output h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  textarea {
+    font-size: 16px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
